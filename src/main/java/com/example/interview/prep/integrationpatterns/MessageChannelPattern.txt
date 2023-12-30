@@ -1,0 +1,9 @@
+
+Message Channel Integration Pattern:
+
+Contains 2 main components/classes
+1. ChannelConfig
+2. MessageSenderService
+
+ChannelConfig defines all channels
+MessageSenderService defines list of MessageTemplates to sen message to specific channel in specific format
