@@ -10,7 +10,7 @@ public class ThreadPoolExample {
 
         // Submit tasks to the thread pool
         executor.submit(new MyTask("Task 1"));
-        executor.submit(new MyTask("Task 2"));
+        executor.submit(() -> System.out.println("Executing in thread: " + Thread.currentThread().getName()));
 
         // Shutdown the thread pool
         executor.shutdown();
