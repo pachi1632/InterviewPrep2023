@@ -12,7 +12,9 @@ public class SortHashMapByValue {
     public static void main(String[] args) {
 
         HashMap<String, Integer> unsortedMap = new HashMap<>();
-        HashMap<String, Integer> sortedMap = unsortedMap.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder())).collect(Collectors.toMap(Map.Entry :: getKey, Map.Entry :: getValue, (e1, e2) -> e1, LinkedHashMap :: new));
+        HashMap<String, Integer> sortedMap = unsortedMap.entrySet().stream()
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .collect(Collectors.toMap(Map.Entry :: getKey, Map.Entry :: getValue, (e1, e2) -> e1, LinkedHashMap :: new));
 
 
     }
