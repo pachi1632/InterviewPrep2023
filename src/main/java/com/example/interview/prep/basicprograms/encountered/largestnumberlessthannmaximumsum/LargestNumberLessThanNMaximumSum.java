@@ -2,6 +2,10 @@ package com.example.interview.prep.basicprograms.encountered.largestnumberlessth
 
 // Java implementation of the approach
 
+/*
+Url: https://www.geeksforgeeks.org/largest-number-less-than-n-with-digit-sum-greater-than-the-digit-sum-of-n/
+* */
+
 class LargestNumberLessThanNMaximumSum {
     // Function to return the greatest
     // number less than n such that
