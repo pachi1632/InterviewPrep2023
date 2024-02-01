@@ -1,6 +1,6 @@
 package com.example.interview.prep.dsa.reversingalinkedlist;
 
-public class ReversingALinkedList {
+public class ReversingAndRotatingALinkedList {
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
 
@@ -15,7 +15,8 @@ public class ReversingALinkedList {
         list.printList();
 
         // Reversing the linked list
-        list.reverse();
+        /*list.reverse();*/
+        list.rotate(2);
 
         System.out.println("Reversed Linked List:");
         list.printList();
