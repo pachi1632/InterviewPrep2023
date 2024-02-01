@@ -15,7 +15,7 @@ class LongestPalindromicSubstring {
     // longest palindrome subString
     // It also returns the length
     // of the longest palindrome
-    static int longestPalSubstr(String str)
+    static int longestPalSubstrGFG(String str)
     {
         // Get length of input String
         int n = str.length();
@@ -51,11 +51,45 @@ class LongestPalindromicSubstring {
         return maxLength;
     }
 
+    /*My sol*/
+    static int longestPalSubstr(String str)
+    {
+        // Get length of input String
+        int n = str.length();
+
+        // All subStrings of length 1
+        // are palindromes
+        int maxLength = 1, start = 0;
+
+        // Nested loop to mark start and end index
+        for (int i = 0; i < str.length(); i++) {
+            for (int j = i; j < str.length(); j++) {
+
+                Boolean flag = new StringBuilder(str.substring(i, j)).reverse().toString().equals(str.substring(i, j));
+
+                // Palindrome forgeeksskeegfor geeksskeeg
+                if (flag && (j - i) > maxLength) {
+                    start = i;
+                    maxLength = j - i;
+                }
+            }
+        }
+
+        System.out.print(
+                "Longest palindrome substring is: ");
+        printSubStr(str, start, start + maxLength - 1);
+
+        // Return length of LPS
+        return maxLength;
+    }
+
     // Driver Code
     public static void main(String[] args)
     {
         String str = "forgeeksskeegfor";
-        System.out.print("\nLength is: "
+        System.out.println("\nLength GFG is: "
+                + longestPalSubstrGFG(str));
+        System.out.println("\nLength is: "
                 + longestPalSubstr(str));
     }
 }
