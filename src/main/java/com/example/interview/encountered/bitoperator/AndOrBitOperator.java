@@ -1,4 +1,4 @@
-package com.example.interview.prep.basicprograms.encountered.bitoperator;
+package com.example.interview.encountered.bitoperator;
 
 /*
 
@@ -36,7 +36,7 @@ Result of 3 & 5: 1
 Result of 3 | 5: 7
 ```
 * */
-public class AndOrOperator {
+public class AndOrBitOperator {
     public static void main(String[] args) {
         /*
         * Q: What is the output of following

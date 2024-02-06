@@ -1,4 +1,4 @@
-package com.example.interview.prep.basicprograms.encountered.largestnumberlessthannmaximumsum;
+package com.example.interview.encountered.largestnumberlessthannmaximumsum;
 
 // Java implementation of the approach
 

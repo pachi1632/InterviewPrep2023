@@ -1,4 +1,4 @@
-package com.example.interview.prep.basicprograms.encountered;
+package com.example.interview.encountered;
 
 
 import java.time.LocalDate;

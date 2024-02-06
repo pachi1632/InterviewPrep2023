@@ -1,4 +1,4 @@
-package com.example.interview.prep.basicprograms.encountered;
+package com.example.interview.encountered;
 
 // A Java solution for longest palindrome
 
